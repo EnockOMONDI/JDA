@@ -111,11 +111,7 @@
 </ul>
 </li>
 <li><a href="about.html">About Us</a></li>
-<li class="nav-item ">
-					
-    <div  id="google_translate_element"></div>
 
-</li>
 <li class="submenu dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Destinations <i class="icon-arrow-down" aria-hidden="true"></i></a>
 <ul class="dropdown-menu">
@@ -179,7 +175,7 @@
 <li><a href="404-1.html">Error Page 2</a></li>
 </ul>
 </li>
-<li><a href="login.html">Login|Register</a></li>
+<!-- <li><a href="login.html">Login|Register</a></li> -->
 <li><a href="comingsoon.html">Coming Soon</a></li>
 <li><a href="testimonials.html">Testimonials</a></li>
 <li><a href="faq.html">Faq</a></li>
@@ -216,15 +212,19 @@
 </li>
 </ul>
 </li>
-<li class="search-main"><a href="#search1" class="mt_search"><i class="fa fa-search"></i></a></li>
+<li >
+					
+    <div id="google_translate_element"></div>
+
+</li>
 </ul>
 </div>
-<div class="register-login d-flex align-items-center">
+<!-- <div class="register-login d-flex align-items-center">
 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-3">
 <i class="icon-user"></i> Login/Register
 </a>
 <a href="#" class="nir-btn white">Book Now</a>
-</div>
+</div> -->
 <div id="slicknav-mobile"></div>
 </div>
 </div>
@@ -232,6 +232,166 @@
 </div>
 
 </header>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+    <style>
+
+.goog-te-gadget {
+  font-family: Roboto, 'Open Sans', sans-serif!important;
+  text-transform: uppercase;
+}
+.goog-te-gadget-simple  {
+  background-color: rgb(0, 49, 15)!important;
+  padding: 2px!important;
+  color: #fff!important;
+  border-radius: 4px!important;
+  font-size: 0.7rem!important;
+  cursor: pointer;
+
+}
+.goog-te-menu2 {
+  max-width: 100%;
+}
+.goog-te-menu-value {
+  color: #fff !important;&:before {
+    font-family: 'Material Icons';
+    content: "\E927";
+    color: #fff ;
+    font-size: 2rem;
+    
+ 
+  } 
+}
+.goog-te-menu-value span:nth-child(5) {
+  display:none;
+}
+.goog-te-menu-value span:nth-child(3) {
+  border:none!important;
+  font-family: 'Material Icons';
+  &:after {
+    font-family: 'Material Icons';
+    content: "\E5C5";
+    font-size: 1.5rem;
+
+  }  
+}
+
+.goog-te-gadget-icon {
+    background-image: none!important;
+    display: none;
+   
+}
+
+
+.goog-te-banner-frame.skiptranslate {display: none!important;
+} 
+body {top: 0px!important;}
+
+/* ================================== *\
+    Mediaqueries
+\* ================================== */
+@media (max-width: 667px) {
+	#google_translate_element {
+		bottom: calc(100% - 50% - 53px);
+		left: 16px!important;
+		width: 100%!important;
+		goog-te-gadget {
+			width:100%!important;
+		}
+		.skiptranslate {
+			width:100%!important;			
+		}
+		.goog-te-gadget-simple {
+			width: calc(100% - 32px)!important;
+			text-align: center;
+		}	
+	}
+}
+
+
+
+
+</style>
+
+
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'de,ar,sw,fr,en,it,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+		}
+					  
+	$('document').ready(function () {
+	
+	
+	// RESTYLE THE DROPDOWN MENU
+	$('#google_translate_element').on("click", function () {
+	
+	// Change font family and color
+	$("iframe").contents().find(".goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div, .goog-te-menu2 *")
+		.css({
+			'color': '#544F4B:',
+			'font-family': 'Roboto',
+							'width':'100%'
+		});
+	// Change menu's padding
+	$("iframe").contents().find('.goog-te-menu2-item-selected').css ('display', 'none');
+		
+			// Change menu's padding
+	$("iframe").contents().find('.goog-te-menu2').css ('padding', '0px');
+	
+	// Change the padding of the languages
+	$("iframe").contents().find('.goog-te-menu2-item div').css('padding', '20px');
+	
+	// Change the width of the languages
+	$("iframe").contents().find('.goog-te-menu2-item').css('width', '100%');
+	$("iframe").contents().find('td').css('width', '100%');
+	
+	// Change hover effects
+	$("iframe").contents().find(".goog-te-menu2-item div").hover(function () {
+		$(this).css('background-color', '#9c27b0').find('span.text').css('color', 'white');
+	}, function () {
+		$(this).css('background-color', 'white').find('span.text').css('color', '#544F4B');
+	});
+	
+	// Change Google's default blue border
+	$("iframe").contents().find('.goog-te-menu2').css('border', 'none');
+	
+	// Change the iframe's box shadow
+	$(".goog-te-menu-frame").css('box-shadow', '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3)');
+	
+	
+	
+	// Change the iframe's size and position?
+	$(".goog-te-menu-frame").css({
+		'height': '100%',
+		'width': '100%',
+		'top': '0px'
+	});
+	// Change iframes's size
+	$("iframe").contents().find('.goog-te-menu2').css({
+		'height': '100%',
+		'width': '100%'
+	});
+	});
+	});
+		</script>
+
+
+
+
+
 
 <style>
     /* Adjust the background color and padding of the banner-main */
@@ -353,7 +513,7 @@
     <div class="trend-image position-relative">
     <img src="images/new-deal/naivasha.webp" alt="image" class>
     <div class="trend-content1 px-4 top-50 bottom-inherit translatey-50">
-    <h5 class="theme1 mb-0"><i class="flaticon-location-pin"></i> Naivasha</h5>
+    <h5 class="theme1 mb-0"><i class="flaticon-location-pin"></i>Naivasha</h5>
     <h2 class="mb-1 white"><a href="grid-leftfilter.html/index.html" class="white">Lake Naivasha</a></h2>
     <div class="rating-main pb-10">
     <div class="rating">
@@ -516,44 +676,167 @@
     }
 </style>
 
-<section class="about-us pb-20" style="background-image:url(images/bg/bg-trans.png); margin-top: -5%; ">
+<section class="about-us " style="background-image:url(images/bg/bg-trans.png); margin-top: -10%; ">
     <div class="container">
     <div class="about-image-box">
     <div class="row d-flex align-items-center justify-content-between">
-    <div class="col-lg-5 mb-4 pe-lg-4">
-    <div class="about-image1 overflow-hidden rounded">
-    <img src="images/destination/destination6.jpg" style="" alt>
-    </div>
-    </div>
+   
     <div class="col-lg-7 ps-lg-4">
-    <div class="about-content text-center text-lg-left">
+    <div class="about-content  text-lg-left">
     <h4 class="theme d-inline-block mb-0">About Us</h4>
     <h2 class="border-b mb-2 pb-1">Discover Kenya's Magic</h2>
-    <p class="border-b mb-2 pb-2">Explore Kenya's Unforgettable Travel Experiences and captivating landscapes with us.
-         Our family company is dedicated to providing exceptional travel experiences. From thrilling safaris in Maasai
-          Mara to pristine beaches along the coast,  we curate tailor-made itineraries that cater to every traveler's unique preferences. . Immerse yourself in cultural encounters and the spirit of adventure.
-          Embrace the spirit of adventure and let us guide you on an unforgettable journey through the enchanting beauty of Kenya</p>
+    <p class="border-b mb-2 pb-2">Jungle Dreams adventure is a family owned company  dedicated to providing exceptional travel experiences in Kenya. With our passion for exploration, cultural immersion, and personalized service, we create unforgettable journeys showcasing the diverse wonders of this beautiful country. From wildlife safaris to beach getaways and cultural encounters, our knowledgeable team crafts tailor-made itineraries that exceed expectations. Embrace the spirit of adventure and let us guide you through Kenya's enchanting beauty.
+       </p>
     <div class="about-listing">
     <ul class="d-flex justify-content-between">
-    <li><i class="icon-location-pin theme"></i> Tour Guide</li>
-    <li><i class="icon-briefcase theme"></i> Friendly Price</li>
-    <li><i class="icon-folder theme"></i> Reliable Tour Package</li>
+    <li style="color:#061a00 ;"><i class="icon-location-pin theme"></i> Tour Guide</li>
+    <li style="color:#061a00 ;"><i class="icon-briefcase theme"></i> Friendly Price</li>
+    <li style="color:#061a00 ;"><i class="icon-folder theme"></i> Reliable Tour Package</li>
     </ul>
     </div>
     </div>
     </div>
+    <div class="col-lg-5 mb-4 pe-lg-4">
+        <div class="about-image1 overflow-hidden rounded">
+        <img src="images/destination/destination6.png" style="" alt>
+        </div>
+        </div>
     </div>
     </div>
     </div>
     <div class="white-overlay"></div>
     </section>
 
-    
+ 
+<section class="banner pt-10 pb-0 overflow-hidden" style="background-image:url(images/testimonial.png);">
+    <div class="container">
+    <div class="banner-in">
+    <div class="row align-items-center">
+        
+        <div class="col-lg-7 mb-4">
+            <div class="trending-topic-content">
+                <img src="images/testimonial/safaris.png" class="mb-1 d-inline-block" alt>
+                </div>
+        </div>
+        <div class="col-lg-5 mb-4">
+            <div class="banner-content text-lg-start text-center">
+            <h4 class="theme mb-0">Why us </h4>
+            <h1>The best Tours and Safaris in the Savanah</h1>
+            <!-- <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore</p> -->
+            <div class="book-form">
+            <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-lg-6 mb-2">
+            <div class="form-group">
+            <div class="input-box">
+                
+            <select class="niceSelect">
+            <option value="1">Destination</option>
+            <option value="2">Nakuru</option>
+            <option value="3">Naivasha</option>
+            <option value="4">Tsavo</option>
+            <option value="5">Maasai Mara</option>
+            </select>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 mb-2">
+            <div class="form-group">
+            <div class="input-box">
+            <input type="date" name="date">
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 mb-2">
+            <div class="form-group">
+            <div class="input-box">
+            <select class="niceSelect">
+            <option value="1">Travel Type</option>
+            <option value="2">City Tour</option>
+            <option value="3">Family Tour</option>
+            </select>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 mb-2">
+            <div class="form-group">
+            <div class="input-box">
+            <select class="niceSelect">
+            
+            <option value="1">Tour Duration</option>
+            <option value="2">3 days</option>
+            <option value="3">4 Days</option>
+            </select>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-12">
+            <div class="form-group mb-0 text-center">
+            <a href="#" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Search
+            Now</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+  
+    </div>
+    <div class="category-main-inner border-t pt-1">
+    <div class="row side-slider">
+    <div class="col-lg-3 col-md-6 my-4">
+    <div class="category-item box-shadow p-3 py-4 text-center bg-white rounded overflow-hidden">
+    <div class="trending-topic-content">
+    <img src="images/icons/004-camping-tent.png" class="mb-1 d-inline-block" alt>
+    <h4 class="mb-0"><a href="tour-grid.html">Camping</a></h4>
+    </div>
+    </div>
+    </div>
+  
+    <div class="col-lg-3 col-md-6 my-4">
+    <div class="category-item box-shadow p-3 py-4 text-center bg-white rounded overflow-hidden">
+    <div class="trending-topic-content">
+    <img src="images/icons/005-sunbed.png" class="mb-1 d-inline-block" alt>
+    <h4 class="mb-0"><a href="tour-grid.html">Beach Tours</a></h4>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 my-4">
+    <div class="category-item box-shadow p-3 py-4 text-center bg-white rounded overflow-hidden">
+    <div class="trending-topic-content">
+    <img src="images/icons/002-safari.png" class="mb-1 d-inline-block" alt>
+    <h4 class="mb-0"><a href="tour-grid.html">Safari Tours</a></h4>
+    </div>
+    </div>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6 my-4">
+    <div class="category-item box-shadow p-3 py-4 text-center bg-white rounded overflow-hidden">
+    <img src="images/icons/007-hiking-1.png" class="mb-1 d-inline-block" alt>
+    <div class="trending-topic-content">
+    <h4 class="mb-0"><a href="tour-grid.html">Cultural Tours</a></h4>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6 my-4">
+        <div class="category-item box-shadow p-3 py-4 text-center bg-white rounded overflow-hidden">
+        <div class="trending-topic-content text-center">
+        <img src="images/icons/003-hiking.png" class="mb-1 d-inline-block" alt>
+        <h4 class="mb-0"><a href="tour-grid.html">Hiking</a></h4>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>   
 <section class="about-us pb-6" style="background-image:url(images/shape4.png); background-position:center;">
 <div class="container">
-<div class="section-title mb-6 w-50 mx-auto text-center">
-<h4 class="mb-1 theme1">Why us</h4>
-<h2 class="mb-1">Discover and book<span class="theme"> your dream adventure effortlessly in four steps</span></h2>
+<div class="section-title mb-6 w-70 mx-auto text-center">
+<!-- <h4 class="mb-1 theme1">Why us</h4> -->
+<h1 class="mb-1">Discover and book<span class="theme"> your dream adventure effortlessly in four steps</span></h1>
 </div>
 
 <div class="why-us">
@@ -571,6 +854,19 @@
         </div>
         </div>
         </div>
+        
+<div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+    <div class="why-us-item p-5 pt-6 pb-6 border rounded bg-white">
+    <div class="why-us-content">
+    <div class="why-us-icon mb-1">
+    <!-- <i class="icon-location-pin theme"></i> -->
+    </div>
+    <h4><a href="about.html">Share Your Travel Locations</a></h4>
+    <p class="mb-2">Explore Kenya's curated tours, destinations and experiences.</p>
+    <!-- <p class="mb-0 theme">100+ Reviews</p> -->
+    </div>
+    </div>
+    </div>
 <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
 <div class="why-us-item p-5 pt-6 pb-6 border rounded bg-white">
 <div class="why-us-content">
@@ -579,30 +875,19 @@
 </div>
 <h4><a href="about.html">Browse our curated tour packages </a></h4>
 <p class="mb-2">
-    Explore Kenya's curated tours, destinations and experiences.</p>
+     Hustle-free Booking! secure your spot on the tour</p>
     <!-- <p class="mb-0 theme">100+ Reviews</p> -->
 </div>
 </div>
 </div>
 
 
-<div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-    <div class="why-us-item p-5 pt-6 pb-6 border rounded bg-white">
-    <div class="why-us-content">
-    <div class="why-us-icon mb-1">
-    <!-- <i class="icon-location-pin theme"></i> -->
-    </div>
-    <h4><a href="about.html">Share Your Travel Locations</a></h4>
-    <p class="mb-2">Hustle-free Booking! secure your spot on the tour</p>
-    <!-- <p class="mb-0 theme">100+ Reviews</p> -->
-    </div>
-    </div>
-    </div>
 <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
 <div class="why-us-item p-5 pt-6 pb-6 border rounded bg-white">
 <div class="why-us-content">
 <div class="why-us-icon mb-1">
 <!-- <i class="icon-compass theme"></i> -->
+ 
 </div>
 <h4><a href="about.html">100% Trusted Tour Agency</a></h4>
 <p class="mb-2">Pack your bags, bring your excitement, and leave the rest to us. </p>
@@ -611,6 +896,7 @@
 </div>
 </div>
 </div>
+
 </div>
 </div>
 
@@ -647,7 +933,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
 <div class="trend-item1">
 <div class="trend-image position-relative rounded">
-<img src="images/destination/destination17.jpg" alt="image">
+<img src="images/destination/destination17.webp" alt="image">
 <div class="trend-content d-flex align-items-center justify-content-between position-absolute bottom-0 p-4 w-100 z-index">
 <div class="trend-content-title">
 <h5 class="mb-0"><a href="grid-leftfilter.html/index.html" class="theme1">Tsavo</a></h5>
@@ -662,13 +948,13 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
 <div class="trend-item1">
 <div class="trend-image position-relative rounded">
-<img src="images/destination/destination14.jpg" alt="image">
+<img src="images/destination/destination14.webp" alt="image">
 <div class="trend-content d-flex align-items-center justify-content-between position-absolute bottom-0 p-4 w-100 z-index">
 <div class="trend-content-title">
 <h5 class="mb-0"><a href="grid-leftfilter.html/index.html" class="theme1">Coastal Region</a></h5>
-<h3 class="mb-0 white">Diani Beach</h3>
+<h3 class="mb-0 white">Old Town</h3>
 </div>
-<span class="white bg-theme p-1 px-2 rounded">21 Tours</span>
+<span class="white bg-theme p-1 px-2 rounded">10 Tours</span>
 </div>
 <div class="color-overlay"></div>
 </div>
@@ -677,7 +963,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
 <div class="trend-item1">
 <div class="trend-image position-relative rounded">
-<img src="images/destination/destination15.jpg" alt="image">
+<img src="images/destination/destination15.webp" alt="image">
 <div class="trend-content d-flex align-items-center justify-content-between position-absolute bottom-0 p-4 w-100">
 <div class="trend-content-title">
 <h5 class="mb-0"><a href="grid-leftfilter.html/index.html" class="theme1">Bush Safaris</a></h5>
@@ -692,13 +978,13 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
 <div class="trend-item1">
 <div class="trend-image position-relative rounded">
-<img src="images/destination/destination16.jpg" alt="image">
+<img src="images/destination/destination16.webp" alt="image">
 <div class="trend-content d-flex align-items-center justify-content-between position-absolute bottom-0 p-4 w-100 z-index">
 <div class="trend-content-title">
 <h5 class="mb-0"><a href="grid-leftfilter.html/index.html" class="theme1">Lake Naivasha</a></h5>
 <h3 class="mb-0 white">Lake Naivasha</h3>
 </div>
-<span class="white bg-theme p-1 px-2 rounded">32 Tours</span>
+<span class="white bg-theme p-1 px-2 rounded">12 Tours</span>
 </div>
 <div class="color-overlay"></div>
 </div>
@@ -714,389 +1000,247 @@
     <div class="container">
     <div class="banner-in">
     <div class="row align-items-center">
-    <div class="col-lg-6 mb-4">
-    <div class="banner-content text-lg-start text-center">
-    <h4 class="theme mb-0">Explore Kenya</h4>
-    <h1>We are The Heart And Soul Of Kenya Adventures</h1>
-    <!-- <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore</p> -->
-    <div class="book-form">
-    <div class="row d-flex align-items-center justify-content-between">
-    <div class="col-lg-6 mb-2">
-    <div class="form-group">
-    <div class="input-box">
-    <select class="niceSelect">
-    <option value="1">Destination</option>
-    <option value="2">Nakuru</option>
-    <option value="3">Naivasha</option>
-    <option value="4">Tsavo</option>
-    <option value="5">Maasai Mara</option>
-    </select>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-6 mb-2">
-    <div class="form-group">
-    <div class="input-box">
-    <input type="date" name="date">
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-6 mb-2">
-    <div class="form-group">
-    <div class="input-box">
-    <select class="niceSelect">
-    <option value="1">Travel Type</option>
-    <option value="2">City Tour</option>
-    <option value="3">Family Tour</option>
-    </select>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-6 mb-2">
-    <div class="form-group">
-    <div class="input-box">
-    <select class="niceSelect">
-    <option value="1">Tour Duration</option>
-    <option value="2">3 days</option>
-    <option value="3">4 Days</option>
-    </select>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-12">
-    <div class="form-group mb-0 text-center">
-    <a href="#" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Search
-    Now</a>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-    <div class="banner-image">
-    <img src="images/travel.png" alt>
-    </div>
-    </div>
-    </div>
-    <div class="category-main-inner border-t pt-1">
-    <div class="row side-slider">
-    <div class="col-lg-3 col-md-6 my-4">
-    <div class="category-item box-shadow p-3 py-4 text-center bg-white rounded overflow-hidden">
-    <div class="trending-topic-content">
-    <img src="images/icons/004-camping-tent.png" class="mb-1 d-inline-block" alt>
-    <h4 class="mb-0"><a href="tour-grid.html">Camping</a></h4>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-3 col-md-6 my-4">
-    <div class="category-item box-shadow p-3 py-4 text-center bg-white rounded overflow-hidden">
-    <div class="trending-topic-content text-center">
-    <img src="images/icons/003-hiking.png" class="mb-1 d-inline-block" alt>
-    <h4 class="mb-0"><a href="tour-grid.html">Hiking</a></h4>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-3 col-md-6 my-4">
-    <div class="category-item box-shadow p-3 py-4 text-center bg-white rounded overflow-hidden">
-    <div class="trending-topic-content">
-    <img src="images/icons/005-sunbed.png" class="mb-1 d-inline-block" alt>
-    <h4 class="mb-0"><a href="tour-grid.html">Beach Tours</a></h4>
-    </div>
-    </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 my-4">
-    <div class="category-item box-shadow p-3 py-4 text-center bg-white rounded overflow-hidden">
-    <div class="trending-topic-content">
-    <img src="images/icons/002-safari.png" class="mb-1 d-inline-block" alt>
-    <h4 class="mb-0"><a href="tour-grid.html">Safari</a></h4>
-    </div>
-    </div>
-    </div>
+        <div class="col-lg-5 mb-4">
+            <div class="banner-content text-lg-start text-center">
+            <h4 class="theme mb-0">Safaris, Tours and Adventures </h4>
+            <h1>Your gateway to Kenya's captivating landscapes</h1>
+            <!-- <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore</p> -->
+            <!-- <div class="book-form">
+            <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-lg-6 mb-2">
+            <div class="form-group">
+            <div class="input-box">
+            <select class="niceSelect">
+            <option value="1">Destination</option>
+            <option value="2">Nakuru</option>
+            <option value="3">Naivasha</option>
+            <option value="4">Tsavo</option>
+            <option value="5">Maasai Mara</option>
+            </select>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 mb-2">
+            <div class="form-group">
+            <div class="input-box">
+            <input type="date" name="date">
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 mb-2">
+            <div class="form-group">
+            <div class="input-box">
+            <select class="niceSelect">
+            <option value="1">Travel Type</option>
+            <option value="2">City Tour</option>
+            <option value="3">Family Tour</option>
+            </select>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 mb-2">
+            <div class="form-group">
+            <div class="input-box">
+            <select class="niceSelect">
+            <option value="1">Tour Duration</option>
+            <option value="2">3 days</option>
+            <option value="3">4 Days</option>
+            </select>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-12">
+            <div class="form-group mb-0 text-center">
+            <a href="#" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Search
+            Now</a>
+            </div>
+            </div>
+            </div>
+            </div> -->
+            </div>
+            </div>
+        <div class="col-lg-7 mb-4">
+            <div class="recent-articles-inner">
+                <div class="row">
+                <div class="col-lg-6">
+                <div class="trend-item box-shadow bg-white mb-4 rounded">
+               
+                <div class="trend-content-main p-4">
+                <div class="trend-content">
+              <h3><a href="detail-1.html" style="color: #fd7e14;" >Journey Into Kenya's Beauty, Culture, and Wonders.</a></h3>
+    
+                <h3 class="theme mb-1"> Our Mission</h3>
+                <p class="mb-3">
+                    Connecting travelers to Kenya's beauty, culture, and wonders through exceptional service and personalized journeys, leaving a lasting impact.            </p>
+              
+                </div>
+                </div>
+                <div class="trend-image">
+                    <img src="images/trending/trending10.png" class="rounded" alt="image">
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="trend-item box-shadow bg-white mb-4 rounded">
+                        <div class="trend-image">
+                        <img src="images/trending/trending10.png" alt="image">
+                        </div>
+                        <div class="trend-content-main p-4">
+                        <div class="trend-content">
+                      <h3><a href="detail-1.html" style="color: #fd7e14;" >Authentic Experiences and Sustainable Exploration</a></h3>
+            
+                        <h3 class="theme mb-1"> Our Vision</h3>
+                        <p class="mb-3">
+                            We aim to be the foremost tour and travel company in Kenya, distinguished for our unwavering pursuit of excellence, sustainability, and genuine experiences.
+                        </div>
+                        </div>
+                        </div>
+                </div>
+           
+                </div>
+                </div>
+        </div>
  
-    <div class="col-lg-3 col-md-6 my-4">
-    <div class="category-item box-shadow p-3 py-4 text-center bg-white rounded overflow-hidden">
-    <img src="images/icons/007-hiking-1.png" class="mb-1 d-inline-block" alt>
-    <div class="trending-topic-content">
-    <h4 class="mb-0"><a href="tour-grid.html">Cultural Tours</a></h4>
+  
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
+   
     </div>
     </div>
     </section>
 
 
-<section class="trending pb-0" style="background-image: url(images/shape2.png);">
-<div class="container">
-<div class="section-title mb-6 w-75 mx-auto text-center">
-<h4 class="mb-1 theme1">Top Deals</h4>
-<h2 class="mb-1">The Last <span class="theme">Minute Deals</span></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-</div>
-<div class="trend-box">
-<div class="row">
-<div class="col-lg-7">
-<div class="row">
-<div class="col-lg-6 col-md-6 mb-4">
-<div class="trend-item rounded box-shadow">
-<div class="trend-image position-relative">
-<img src="images/trending/trending1.jpg" alt="image" class>
-<div class="color-overlay"></div>
-</div>
-<div class="trend-content p-4 pt-5 position-relative bg-white">
-<div class="trend-meta bg-theme white px-3 py-2 rounded">
-<div class="entry-author">
-<i class="icon-calendar"></i>
-<span class="fw-bold"> 4 Days Tours</span>
-</div>
-</div>
-<h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Spain</h5>
-<h3 class="mb-1"><a href="grid-leftfilter.html/index.html">Barcelona city beach</a></h3>
-<div class="rating-main d-flex align-items-center pb-2">
-<div class="rating">
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-</div>
-<span class="ms-2">(21)</span>
-</div>
-<p class=" border-b pb-2 mb-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-<div class="entry-meta">
-<div class="entry-author d-flex align-items-center">
-<p class="mb-0"><span class="theme fw-bold fs-5"> $220.00</span> | Per person</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-6 col-md-6 mb-4">
-<div class="trend-item rounded box-shadow">
-<div class="trend-image position-relative">
-<img src="images/trending/trending2.jpg" alt="image" class>
-<div class="color-overlay"></div>
-</div>
-<div class="trend-content p-4 pt-5 position-relative bg-white">
-<div class="trend-meta bg-theme white px-3 py-2 rounded">
-<div class="entry-author">
-<i class="icon-calendar"></i>
-<span class="fw-bold"> 7 Days Tours</span>
-</div>
-</div>
-<h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Indonesia</h5>
-<h3 class="mb-1"><a href="grid-leftfilter.html/index.html">Bali Province</a></h3>
-<div class="rating-main d-flex align-items-center pb-2">
-<div class="rating">
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-</div>
-<span class="ms-2">(11)</span>
-</div>
-<p class=" border-b pb-2 mb-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-<div class="entry-meta">
-<div class="entry-author d-flex align-items-center">
-<p class="mb-0"><span class="theme fw-bold fs-5"> $210.00</span> | Per person</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-6 col-md-6 mb-4">
-<div class="trend-item rounded box-shadow">
-<div class="trend-image position-relative">
-<img src="images/trending/trending3.jpg" alt="image" class>
-<div class="color-overlay"></div>
-</div>
-<div class="trend-content p-4 pt-5 position-relative bg-white">
-<div class="trend-meta bg-theme white px-3 py-2 rounded">
-<div class="entry-author">
-<i class="icon-calendar"></i>
-<span class="fw-bold"> 3 Days Tours</span>
-</div>
-</div>
-<h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Russia</h5>
-<h3 class="mb-1"><a href="grid-leftfilter.html/index.html">Red City Land</a></h3>
-<div class="rating-main d-flex align-items-center pb-2">
-<div class="rating">
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-</div>
-<span class="ms-2">(25)</span>
-</div>
-<p class=" border-b pb-2 mb-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-<div class="entry-meta">
-<div class="entry-author d-flex align-items-center">
-<p class="mb-0"><span class="theme fw-bold fs-5"> $120.00</span> | Per person</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-6 col-md-6 mb-4">
-<div class="trend-item rounded box-shadow">
-<div class="trend-image position-relative">
-<img src="images/trending/trending4.jpg" alt="image" class>
-<div class="color-overlay"></div>
-</div>
-<div class="trend-content p-4 pt-5 position-relative bg-white">
-<div class="trend-meta bg-theme white px-3 py-2 rounded">
-<div class="entry-author">
-<i class="icon-calendar"></i>
-<span class="fw-bold"> 5 Days Tours</span>
-</div>
-</div>
-<h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Bangladesh</h5>
-<h3 class="mb-1"><a href="grid-leftfilter.html/index.html">Cox's bazar Beach</a></h3>
-<div class="rating-main d-flex align-items-center pb-2">
-<div class="rating">
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-</div>
-<span class="ms-2">(32)</span>
-</div>
-<p class=" border-b pb-2 mb-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-<div class="entry-meta">
-<div class="entry-author d-flex align-items-center">
-<p class="mb-0"><span class="theme fw-bold fs-5"> $100.00</span> | Per person</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-5 mb-4">
-<div class="trend-item1 rounded box-shadow mb-4">
-<div class="trend-image position-relative">
-<img src="images/trending/trendingb-2.jpg" alt="image" class>
-<div class="trend-content1 p-4">
-<h5 class="theme1 mb-1"><i class="flaticon-location-pin"></i> Norway</h5>
-<h3 class="mb-1 white"><a href="grid-leftfilter.html/index.html" class="white">Norway Lake</a></h3>
-<div class="rating-main d-flex align-items-center pb-2">
-<div class="rating">
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-</div>
-<span class="ms-2 white">(16)</span>
-</div>
-<div class="entry-meta d-flex align-items-center justify-content-between">
-<div class="entry-author d-flex align-items-center">
-<p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $180.00</span> | Per person</p>
-</div>
-<div class="entry-author">
-<i class="icon-calendar white"></i>
-<span class="fw-bold white"> 6 Days Tours</span>
-</div>
-</div>
-</div>
-<div class="overlay"></div>
-</div>
-</div>
-<div class="trend-item1 rounded box-shadow mb-4">
-<div class="trend-image position-relative">
-<img src="images/trending/trending-large.jpg" alt="image" class>
-<div class="trend-content1 p-4">
-<h5 class="theme1 mb-1"><i class="flaticon-location-pin"></i> Egpyt</h5>
-<h3 class="mb-1 white"><a href="grid-leftfilter.html/index.html" class="white">Pyramid Land</a></h3>
-<div class="rating-main d-flex align-items-center pb-2">
-<div class="rating">
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-</div>
-<span class="ms-2 white">(16)</span>
-</div>
-<div class="entry-meta d-flex align-items-center justify-content-between">
-<div class="entry-author d-flex align-items-center">
-<p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $180.00</span> | Per person</p>
-</div>
-<div class="entry-author">
-<i class="icon-calendar white"></i>
-<span class="fw-bold white"> 6 Days Tours</span>
-</div>
-</div>
-</div>
-<div class="overlay"></div>
-</div>
-</div>
-<div class="trend-item1 rounded box-shadow">
-<div class="trend-image position-relative">
-<img src="images/trending/trendingb-1.jpg" alt="image" class>
-<div class="trend-content1 p-4">
-<h5 class="theme1 mb-1"><i class="flaticon-location-pin"></i> Usa</h5>
-<h3 class="mb-1 white"><a href="grid-leftfilter.html/index.html" class="white">New York City</a></h3>
-<div class="rating-main d-flex align-items-center pb-2">
-<div class="rating">
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-</div>
-<span class="ms-2 white">(12)</span>
-</div>
-<div class="entry-meta d-flex align-items-center justify-content-between">
-<div class="entry-author d-flex align-items-center">
-<p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $140.00</span> | Per person</p>
-</div>
-<div class="entry-author">
-<i class="icon-calendar white"></i>
-<span class="fw-bold white"> 3 Days Tours</span>
-</div>
-</div>
-</div>
-<div class="overlay"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+        <section class="our-team banner pt-0 pb-0 overflow-hidden" style="background-image:url(images/testimonial.png);">
 
-
-
-
-
+        <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 mb-4">
+                <div class="row team-main">
+                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-list bg-white rounded">
+                <div class="team-image">
+                <img src="images/team/img4.jpg" alt="team">
+                </div>
+                <div class="team-content text-center p-3 bg-theme">
+                <h4 class="mb-0 white">Mara Serena Safari Lodge</h4>
+                </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-list bg-white rounded">
+                <div class="team-image">
+                <img src="images/team/img4.jpg" alt="team">
+                </div>
+                <div class="team-content text-center p-3 bg-theme">
+                <h4 class="mb-0 white">Sentrim Amboseli Lodge</h4>
+                </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-list bg-white rounded">
+                <div class="team-image">
+                <img src="images/team/img4.jpg" alt="team">
+                </div>
+                <div class="team-content text-center p-3 bg-theme">
+                <h4 class="mb-0 white">Sentrim Tsavo East Camp</h4>
+                </div>
+                </div>
+                </div>
+              
+                </div>
+                </div>
+        <div class="col-lg-5 mb-4">
+        <div class="section-title text-lg-start text-center">
+        <h4 class="mb-1 theme1">Top  Accomodations </h4>
+        <h1>The best Lodges<span class="theme">Camp sites and Resorts in Kenya</span></h1>
+        <a href="#" class="nir-btn">All Accomodations</a>
+        </div>
+        </div>
+      
+        </div>
+        </div>
+        </section>
+        <section class="about-us p-0 pt-3">
+            <div class="container">
+            <div class="about-image-box">
+            <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-lg-5 mb-4 pe-lg-4">
+            
+            <div class="form-main mt-minus">
+            <div class="form-content rounded overflow-hidden" >
+            <h3 class="form-title text-center p-3 white bg-theme1 mb-0 rounded-top " >Explore more Locations</h3>
+            <div class="book-form px-4 py-5">
+            <div class="form-group mb-2">
+            <div class="input-box">
+            
+            <select class="niceSelect">
+            <option value="1">Destination</option>
+            <option value="2">Nakuru</option>
+            <option value="3">Naivasha</option>
+            <option value="4">Tsavo</option>
+            <option value="5">Maasai Mara</option>
+            </select>
+            </div>
+            </div>
+            <div class="form-group mb-2">
+            <div class="input-box">
+            <input type="date" name="date">
+            </div>
+            </div>
+            <div class="form-group mb-2">
+            <div class="input-box">
+                <select class="niceSelect">
+                    <option value="1">Travel Type</option>
+                    <option value="2">City Tour</option>
+                    <option value="3">Family Tour</option>
+                    </select>
+               
+            </div>
+            </div>
+            <div class="form-group mb-2">
+            <div class="input-box">
+                <select class="niceSelect">
+                   
+                    <option value="1">Tour Duration</option>
+                    <option value="2">3 days</option>
+                    <option value="3">4 Days</option>
+                    </select>
+            </div>
+            </div>
+            <div class="form-group text-center">
+            <a href="#" class="nir-btn w-100"><i class="fa fa-search mr-2"></i> Search Now</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            </div>
+            <div class="col-lg-7 mb-4 ps-lg-4">
+            <div class="about-content text-center text-lg-start mb-4 mt-10">
+            <h4 class="theme d-inline-block mb-0">Your Home in Paradise</h4>
+            <h2>Exceptional Holiday Homes and Retirement Options in Kenya</h2>
+            <p class="border-b mb-2 pb-2">In addition to creating unforgettable travel experiences in Kenya, 
+                we also specialize in providing holiday homes and retirement options in this breathtaking country. Whether you are seeking a peaceful coastal getaway, a serene countryside retreat, or a vibrant urban oasis, we have a collection of carefully selected properties to suit your preferences, ensuring that you find the perfect home away from home. .</p>
+            <div class="about-listing">
+        
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="white-overlay"></div>
+            </section>
 <section class="discount-action pt-4" style="background-image:url(images/section-bg1.png); background-position:center;">
 <div class="section-shape section-shape1 top-inherit bottom-0" style="background-image: url(images/shape8.png);"></div>
 <div class="container">
 <div class="call-banner rounded pt-10 pb-14">
-<div class="call-banner-inner w-75 mx-auto text-center px-5">
+<div class="call-banner-inner w-85 mx-auto text-center px-5">
 <div class="trend-content-main">
 <div class="trend-content mb-5 pb-2 px-5">
-<h5 class="mb-1 theme">Love Where Your're Going</h5>
-<h2><a href="detail-fullwidth.html/index.html">Explore Your Life, <span class="theme1"> Travel Where You Want!</span></a></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h1><a href=""> Explore Kenya's Breathtaking Wildlife and Cultural Heritage<span class="theme1"></span></a></h1>
 </div>
-<div class="video-button text-center position-relative">
-<div class="call-button text-center">
-<button type="button" class="play-btn js-video-button" data-video-id="152879427" data-channel="vimeo">
-<i class="fa fa-play bg-blue"></i>
-</button>
-</div>
-<div class="video-figure"></div>
-</div>
+
 </div>
 </div>
 </div>
@@ -1108,22 +1252,21 @@
 <section class="testimonial pt-4">
 <div class="container">
 <div class="section-title mb-6 text-center w-75 mx-auto">
-<h4 class="mb-1 theme1">Our Testimonails</h4>
-<h2 class="mb-1">Good Reviews By <span class="theme">Clients</span></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+<h4 class="mb-1 theme1"> Praise and Recognition</h4>
+<h2 class="mb-1">What Our clients Say<span class="theme"></span></h2>
 </div>
 <div class="testimonial-in">
 <div class="row review-slider1">
 <div class="col-sm-4 item">
 <div class="testimonial-item1 rounded bg-white p-4 py-5 box-shadow border text-center mx-2">
 <div class="details mb-4">
-<p class="m-0"><i class="fa fa-quote-left me-2 fs-1"></i>Lorem Ipsum is simply dummy text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum has been the industry's standard dummy hic et quidem. Dignissimos maxime velit unde inventore quasi vero dolorem.</p>
+<p class="m-0"><i class="fa fa-quote-left me-2 fs-1"></i>
+    From the moment I arrived in Nairobi, everything was taken care of. The team at Safari Adventures Kenya went above and beyond to ensure that every aspect of my trip was seamless. Our guide, Peter, was extremely knowledgeable about the wildlife and the national parks we visited. I was amazed by the diverse landscapes and the opportunity to see the Big Five up close. The accommodations? fantastic!!!
+</p>
 </div>
 <div class="author-info mt-2">
-<a href="#"><img src="images/testimonial/img1.jpg" alt></a>
 <div class="author-title ms-3">
-<h5 class="m-0 theme">Lonell South</h5>
-<span>Accountant</span>
+<h5 class="m-0 theme">Anna Müller </h5>
 </div>
 </div>
 </div>
@@ -1131,13 +1274,13 @@
 <div class="col-sm-4 item">
 <div class="testimonial-item1 rounded bg-white p-4 py-5 box-shadow border text-center mx-2">
 <div class="details mb-4">
-<p class="m-0"><i class="fa fa-quote-left me-2 fs-1"></i>Lorem Ipsum is simply dummy text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum has been the industry's standard dummy hic et quidem. Dignissimos maxime velit unde inventore quasi vero dolorem.</p>
+<p class="m-0"><i class="fa fa-quote-left me-2 fs-1"></i>
+    The lodges we stayed in were luxurious and provided a comfortable retreat after long days of exploring. I will forever cherish the memories of witnessing the Great Migration in the Maasai Mara and the breathtaking views of Mount Kilimanjaro. Thank you, Jungle Dreams , for an unforgettable adventure!"
+</p>
 </div>
 <div class="author-info mt-2">
-<a href="#"><img src="images/testimonial/img2.jpg" alt></a>
 <div class="author-title ms-3">
-<h5 class="m-0 theme">Kelton Mick</h5>
-<span>Manager</span>
+<h5 class="m-0 theme">Max Fischer</h5>
 </div>
 </div>
 </div>
@@ -1145,13 +1288,13 @@
 <div class="col-sm-4 item">
 <div class="testimonial-item1 rounded bg-white p-4 py-5 box-shadow border text-center mx-2">
 <div class="details mb-4">
-<p class="m-0"><i class="fa fa-quote-left me-2 fs-1"></i>Lorem Ipsum is simply dummy text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum has been the industry's standard dummy hic et quidem. Dignissimos maxime velit unde inventore quasi vero dolorem.</p>
+<p class="m-0"><i class="fa fa-quote-left me-2 fs-1"></i>
+    The Expeditions were beyond my expectations! I felt welcomed and well taken care of. The team planned our itinerary, ensuring we had a diverse and memorable safari experience.
+    The camps we stayed in were exquisite, offering a perfect blend of comfort and immersion in nature. Witnessing a herd of elephants bathing at a watering hole was a sight that will stay with me forever. Thank you </p>
 </div>
 <div class="author-info mt-2">
-<a href="#"><img src="images/testimonial/img3.jpg" alt></a>
 <div class="author-title ms-3">
-<h5 class="m-0 theme">Jared Erondu</h5>
-<span>Supervisor</span>
+<h5 class="m-0 theme">Lukas Weber </h5>
 </div>
 </div>
 </div>
@@ -1162,7 +1305,7 @@
 </section>
 
 
-<section class="trending recent-articles pb-6 pt-0">
+<!-- <section class="trending recent-articles pb-6 pt-0">
 <div class="container">
 <div class="section-title mb-6 w-75 mx-auto text-center">
 <h4 class="mb-1 theme1">Our Blogs Offers</h4>
@@ -1249,50 +1392,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 </div>
 </div>
 </div>
-</section>
+</section> -->
 
 
-<section class="our-partner pt-0 pb-6">
-<div class="container">
-<div class="section-title mb-6 w-75 mx-auto text-center">
-<h4 class="mb-1 theme1">Our Partners</h4>
-<h2 class="mb-1">Our Awesome <span class="theme">partners</span></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-</div>
-<div class="row align-items-center partner-in partner-slider">
-<div class="col-md-3 col-sm-6">
-<div class="partner-item p-4 py-2 rounded bg-lgrey">
-<img src="images/cl-1.png" alt>
-</div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="partner-item p-4 py-2 rounded bg-lgrey">
-<img src="images/cl-5.png" alt>
-</div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="partner-item p-4 py-2 rounded bg-lgrey">
-<img src="images/cl-2.png" alt>
-</div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="partner-item p-4 py-2 rounded bg-lgrey">
-<img src="images/cl-3.png" alt>
-</div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="partner-item p-4 py-2 rounded bg-lgrey">
-<img src="images/cl-4.png" alt>
-</div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="partner-item p-4 py-2 rounded bg-lgrey">
-<img src="images/cl-5.png" alt>
-</div>
-</div>
-</div>
-</div>
-</section>
 
 
 <footer class="pt-20 pb-4" style="background-image: url(images/background_pattern.png);">
@@ -1362,7 +1464,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 <div class="footer-about">
 <img src="images/logo-white.png" alt>
 <p class="mt-3 mb-3 white">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio suspendisse leo neque iaculis molestie sagittis maecenas aenean eget molestie sagittis.
+    Welcome to our travel agency, Jungel Dreams adventure a familyowned  company, dedicated to providing exceptional travel experiences in the captivating landscapes of Kenya. With our deep passion for exploration, cultural immersion, and personalized service, we aim to create unforgettable journeys that showcase the diverse wonders of this beautiful country.
+
 </p>
 <ul>
 <li class="white"><strong>PO Box:</strong> +47-252-254-2542</li>
